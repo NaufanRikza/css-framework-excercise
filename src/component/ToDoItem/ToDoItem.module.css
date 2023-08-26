@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+.container_checkbox{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container_text{
+    width: 500px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 16px;
+}
