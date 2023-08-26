@@ -23,6 +23,9 @@ function TodoInput(props) {
         <Button
           bg={"blue.300"}
           onClick={() => {
+            if (inputValue === "") {
+              return;
+            }
             const obj = {
               id: todoItemList.length,
               name: inputValue,
@@ -31,7 +34,6 @@ function TodoInput(props) {
             todoItemList.push(obj);
             setTodoList([...todoItemList]);
             setInputValue("");
-            // console.log(todoItemList);
           }}
         >
           Add Task
